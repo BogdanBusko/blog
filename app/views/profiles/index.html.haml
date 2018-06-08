@@ -1,0 +1,16 @@
+%h1
+  = @user.username
+.information
+  .email
+    Email:
+    = @user.email
+- if @posts.count > 0
+  %h4 Your posts
+  - @posts.each do |post|
+    .post-container
+      = link_to post_url(post.id), class: 'post' do
+        .post-title
+          = post.title
+        .text
+          = post.text.truncate(400)
+  = paginate @posts

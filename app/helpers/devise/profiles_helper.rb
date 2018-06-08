@@ -1,0 +1,2 @@
+module Devise::ProfilesHelper
+end

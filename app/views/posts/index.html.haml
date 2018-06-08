@@ -1,0 +1,8 @@
+- @posts.each do |post|
+  .post-container
+    = link_to post_url(post.id), class: 'post' do
+      .post-title
+        = post.title
+      .text
+        = post.text.truncate(400)
+= paginate @posts

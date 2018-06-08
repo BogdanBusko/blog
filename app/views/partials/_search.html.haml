@@ -1,0 +1,4 @@
+.search
+  = form_with url: yield do f
+    = f.text_field :search, placeholder: 'Search'
+    = f.submit, "Search"

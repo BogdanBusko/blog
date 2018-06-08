@@ -1,0 +1,166 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Scada');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #494949;
+  color: #E0E0DF;
+  font-size: 18px;
+  font-family: 'Scada', sans-serif;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #232729
+}
+
+.post-container {
+  margin: 20px 0px;
+}
+
+.content {
+  margin: 10px 150px;
+}
+
+
+a.post:active,
+a.post:hover,
+a.post:visited,
+a.post:link {
+  text-decoration: none;
+  color: #E0E0DF;
+}
+
+.post-title {
+  color: #4EE34F;
+  font-size: 24px;
+}
+
+.text {
+  text-align: justify;
+}
+
+.title {
+  padding: 5px;
+  margin-left: 150px;
+  display: inline-block;
+  float: left;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.registration {
+  margin-top: 11px;
+  margin-right: 150px;
+  display: inline-block;
+  float: right;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination
+a:active,
+a:hover,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #E0E0DF;
+}
+
+.pagination .current {
+  color: #606263;
+}
+
+.title a {
+  color: #4EE34F;
+  font-size: 32px;
+}
+
+.form-container {
+  margin: auto;
+  height: 500px;
+  width: 400px;
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container form, .form-container a {
+  padding-left: 100px;
+}
+
+
+.form-container input[type=email],
+.form-container input[type=password],
+.form-container input[type=text] {
+  width: 200px;
+  height: 24px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: 'Scada', sans-serif;
+  color: #E0E0DF;
+  background-color: #494949;
+}
+
+.form-container .error {
+  vertical-align: top;
+  display: block;
+}
+
+.form-container input[type=checkbox] {
+  margin-top: 10px;
+  background-color: #494949;
+}
+
+.comments-form {
+  width: auto;
+}
+
+.comments-form textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  font-size: 16px;
+  padding: 5px;
+  font-family: 'Scada', sans-serif;
+  color: #E0E0DF;
+  background-color: #494949;
+}
+
+input[type=submit] {
+  width: 214px;
+  height: 35px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: 'Scada', sans-serif;
+  background-color: #494949;
+  color: #E0E0DF;
+}
